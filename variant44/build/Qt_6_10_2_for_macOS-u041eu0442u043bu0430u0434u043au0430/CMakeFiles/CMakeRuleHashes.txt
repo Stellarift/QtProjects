@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+ade7b06478ee9ca7aaa76864346f5a98 CMakeFiles/variant44_autogen
+dee7a8e1e3a03505324ff3b6933a757e variant44_autogen/timestamp
