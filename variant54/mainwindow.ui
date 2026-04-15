@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>20</y>
+      <width>241</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="lbl_Countries">
+       <property name="text">
+        <string>Выберите страну</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbl_Cars">
+       <property name="text">
+        <string>Выберите марку</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="combo_Country"/>
+     </item>
+     <item>
+      <widget class="QComboBox" name="combo_Car"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_AddSupply">
+       <property name="text">
+        <string>Добавить поставку</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="list_Supplies"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_Analyze">
+       <property name="text">
+        <string>Анализировать</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="textEdit_Result"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="btn_ClearResult">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>100</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Очистить результаты</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
