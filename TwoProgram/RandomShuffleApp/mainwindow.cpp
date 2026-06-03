@@ -30,21 +30,18 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_btn_Generate_clicked()
 {
-    // Создаём копию исходного списка
+    //копия исходного списка
     QList<int> shuffled = numbers;
 
-    // Перемешиваем случайным образом (алгоритм Фишера-Йетса)
+    //алгоритм Фишера-Йетса
     for (int i = shuffled.size() - 1; i > 0; --i) {
         int j = QRandomGenerator::global()->bounded(i + 1);
 
-        // Вариант 1: используем swapItemsAt() (Qt6)
         shuffled.swapItemsAt(i, j);
 
-        // Вариант 2: используем std::swap
-        // std::swap(shuffled[i], shuffled[j]);
     }
 
-    // Показываем результат
+    //результат
     QString resultText;
     for (int i = 0; i < shuffled.size(); ++i) {
         resultText += QString::number(shuffled[i]);
